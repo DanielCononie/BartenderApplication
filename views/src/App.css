@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+}
+
+.Home {
+  background: linear-gradient(to bottom, white, rgb(0, 100, 251));
+  height: 100vh;
+  padding: 20px;
+}
+
+.home-nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.home-nav > a {
+  text-decoration: none;
+  color: rgb(0, 89, 255);
+  font-weight: bold;
+  margin: 10px;
+  font-size: 18px;
+  transition: font-size 1s;
+  display: inline-block;
+  margin-top: 5%;
+}
+
+.home-nav > a:hover {
+  font-size: 25px;
+}
+.Home > h2 {
+  text-align: center;
+  color: rgb(0, 89, 255);
+  margin-left: 5px;
+}
+
+.home-nav2 {
+  margin-right: 20px;
+}
+
+.Menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 5%;
+  background: linear-gradient(to bottom, white, rgb(0, 100, 251));
+  padding-bottom: 200px;
+}
+
+.menu-container {
+  background: linear-gradient(to bottom, white, rgb(0, 100, 251));
+  width: 100%;
+}
+
+.drink-picture {
+  width: 200px;
+  height: 200px;
+  margin-left: 20px;
+  border: 2px solid black;
+  border-radius: 12px;
+
+}
+
+.drink {
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+}
+
+.bartender-option {
+  position: fixed;
+  right: 0;
+  top: 12px;
+  background-color: white;
+  border-radius: 12px;
+  padding: 15px;
+}
+
+.bar-code {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom, white, rgb(0, 100, 251));
+}
+
+.bar-code > button {
+  cursor: pointer;
+  transition: height 1s;
+  height: 22px;
+}
+
+.bar-code > button:hover {
+  height: 33px;
+}
+
+.order {
+  display: flex;
+}
+
+.order > div > img {
+  height: 40px;
+  width: 40px;
+  margin-top: 20px;
+}
+
+.order > div {
+  margin-left: 20px;
+}
+
+.BartenderMenu {
+  height: 100vh;
+  background: linear-gradient(to bottom, white, rgb(0, 100, 251));
+}
+
+.home-link {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  margin-left: 10%;
+}
+
+.BartenderNav {
+  padding: 10px;
+}
+
+.home-img {
+  height: 300px;
+  width: 400px;
+  justify-content: center;
+  align-items: center;
+}
+
+.home-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+
+}
+
+.drink-btn {
+  border-radius: 50%;
+  border: 2px solid black;
+  font-weight: bold;
+  background-color: aliceblue;
+  padding: 10px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif ;
+  transition: padding 2s;
+  margin-top: 5px;
+}
+
+.drink-btn:hover {
+  padding: 15px;
+  cursor: pointer;
+}
+
+.option-bartender {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+@media (max-width: 1100px) {
+  .Menu {
+    grid-template-columns: 1fr 1fr; /* Change to a single column layout */
+    background: linear-gradient(to bottom, white, rgb(0, 100, 251));
+    padding-bottom: 100px; /* Adjust padding if needed */
+  }
+}
+
+@media (max-width: 700px) {
+  .Menu {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    background: linear-gradient(to bottom, white, rgb(0, 100, 251));
+    padding-bottom: 100px; /* Adjust padding if needed */
+  }
+}
